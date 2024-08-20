@@ -14,7 +14,7 @@ const InputField = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="InputField">
+    <form onSubmit={handleSubmit} className="InputField grid grid-cols-2 gap-4">
       <input
         type="text"
         value={inputValue}
