@@ -4,7 +4,7 @@ import React from 'react';
 
 const Todo = ({ todo, toggleComplete, deleteTodo }) => {
   return (
-    <div className={`Todo flex justify-between items-center p-4 bg-slate-600 ${todo.completed ? 'line-through' : ''}`}>
+    <div className={`Todo grid grid-cols-1 gap-4 md:grid-cols-2  items-center p-4 bg-slate-900 rounded-md ${todo.completed ? 'line-through' : ''}`}>
       <span onClick={() => toggleComplete(todo.id)} className="cursor-pointer">
         {todo.text}
       </span>

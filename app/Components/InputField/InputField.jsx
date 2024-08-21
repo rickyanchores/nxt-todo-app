@@ -14,15 +14,15 @@ const InputField = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="InputField grid grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit} className="InputField grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4 mt-2">
       <input
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Enter a new todo"
-        className="border p-2 rounded w-full text-black"
+        className="border p-4 rounded w-full text-black"
       />
-      <button type="submit" className="bg-orange-600 hover:animate-pulse  text-white p-4 mt-2 rounded">
+      <button type="submit" className="bg-teal-700 hover:animate-pulse  text-white p-4 mt-2 rounded">
         +
       </button>
     </form>
