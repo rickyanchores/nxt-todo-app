@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div className="Home h-screen grid items-center">
       <div className="TodoApp w-1/2 mx-auto">
-      <h1 className='text-4xl font-bold'>nxt-todo-app</h1>
+      <h1 className='text-4xl font-bold uppercase'>nxt-todo-app</h1>
         <InputField addTodo={addTodo} />
         <Todos todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
       </div>
