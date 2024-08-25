@@ -16,7 +16,7 @@ const Todos = ({ todos, toggleComplete, deleteTodo }) => {
           />
         ))
       ) : (
-        <p>No todos available. Add some tasks!</p>
+        <p className='font-semibold'>No todos available. Add some tasks!</p>
       )}
     </div>
   );
