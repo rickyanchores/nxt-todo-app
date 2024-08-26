@@ -22,7 +22,7 @@ const InputField = ({ addTodo }) => {
         placeholder="Enter a new todo"
         className="border p-4 rounded w-full text-black"
       />
-      <button type="submit" className="bg-teal-700 hover:animate-pulse  text-white p-4 mt-2 rounded">
+      <button type="submit" className="bg-teal-700 hover:animate-pulse  text-white text-2xl font-bold p-4 mt-2 rounded">
         +
       </button>
     </form>
