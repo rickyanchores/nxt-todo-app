@@ -4,6 +4,7 @@ import InputField from '@/app/Components/InputField/InputField';
 import Todos from '@/app/Components/Todos/Todos';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import Banner from './Components/Banner/Banner';
 
 const Home = () => {
   const [todos, setTodos] = useState([]);
@@ -30,6 +31,7 @@ const Home = () => {
         <InputField addTodo={addTodo} />
         <Todos todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
       </div>
+      <Banner />
     </div>
   );
 };
