@@ -25,13 +25,13 @@ const Home = () => {
   };
 
   return (
-    <div className="Home h-screen grid items-center">
-      <div className="TodoApp w-1/2 mx-auto">
+    <div className="Home min-h-screen grid items-center">
+      <div className="TodoApp mx-auto">
       <h1 className='text-4xl font-bold uppercase'>nxt-todo-app</h1>
+      <p>By Ricky A 2025</p>
         <InputField addTodo={addTodo} />
         <Todos todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
       </div>
-      <Banner />
     </div>
   );
 };

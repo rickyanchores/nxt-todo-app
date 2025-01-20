@@ -5,7 +5,7 @@ import Todo from '@/app/Components/Todo/Todo';
 
 const Todos = ({ todos, toggleComplete, deleteTodo }) => {
   return (
-    <div className="Todos grid justify-center items-center gap-4 mt-2 p-4">
+    <div className="Todos grid md:grid-cols-4 justify-center items-center gap-4 mt-2 p-4">
       {todos.length > 0 ? (
         todos.map((todo, index) => (
           <Todo
